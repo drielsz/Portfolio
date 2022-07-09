@@ -7,6 +7,15 @@ html {
   font-family: "Montserrat";
 }
 
+/* @keyframes fadeInAnimation {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity:1 
+  }
+} */
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,6 +27,23 @@ a {
 .frame {
   height: 100%;
   padding: 0 11.75vw 0 11.75vw; /* topo | direita | inferior | esquerda */
+}
+
+body {
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 header nav#nav-computer {
