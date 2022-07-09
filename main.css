@@ -1,0 +1,264 @@
+body,
+html {
+  height: 100%;
+  background-color: #1c1c1c;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+.frame {
+  height: 100%;
+  padding: 0 11.75vw 0 11.75vw; /* topo | direita | inferior | esquerda */
+}
+
+header nav#nav-computer {
+  flex: 1;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+header nav#nav-computer ul {
+  list-style-type: none;
+}
+
+header nav#nav-computer ul li {
+  margin: 0 50px;
+}
+
+header nav#nav-computer ul li a {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+header nav#nav-computer button {
+  height: 40px;
+  width: 165px;
+  background: rgba(80, 240, 240, 0.05);
+  border: 1px solid #50f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #50f0f0;
+  margin-left: 50px;
+}
+
+header nav#nav-computer ul button:hover {
+  background: rgba(80, 240, 240, 0.1);
+}
+
+header nav#nav-computer ul li:nth-last-child(1) {
+  margin-right: 0;
+}
+
+header nav#nav-computer p a {
+  color: #c8c8c8;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.flex-end {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*  */
+
+#section-nav-mobile {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #eeeeee;
+  display: none;
+}
+
+section#section-nav-mobile header nav {
+  flex: 1;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+section#section-nav-mobile header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+section#section-nav-mobile header nav ul li a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+  width: 100%;
+}
+
+div.frame-about {
+  flex: 1;
+  height: auto;
+  margin-block: 6.75em;
+}
+
+div.frame-about p,
+h2 {
+  color: white;
+}
+
+div.frame-about p:first-child {
+  color: #50f0f0;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+div.frame-about p:last-child {
+  color: #c8c8c8;
+}
+
+div.frame-about p:last-child i {
+  color: #50f0f0;
+}
+
+div.frame-about h2 {
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+}
+
+div.frame-about h2:nth-child(3) {
+  color: #c8c8c8;
+}
+
+#my-projects h2:first-child {
+  font-size: 35px;
+  color: #c8c8c8;
+  display: flex;
+  margin: 0;
+}
+
+#my-projects div.title-project p {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  color: #50f0f0;
+  text-align: center;
+}
+
+#my-projects div.title-project {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  align-items: center;
+}
+
+#project-cards {
+  margin-block: 62px;
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap row;
+  gap: 62px;
+}
+
+.card {
+  width: 282px;
+  height: 302px;
+  background-color: #f0f0f0;
+  padding: 30px;
+}
+
+.card .icons {
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card .icons div {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.card .icons div i {
+  font-size: 32px;
+  color: #6e6e81;
+}
+
+.hero-frame-card {
+  flex: 1;
+  margin-block: 60px;
+  height: auto;
+}
+
+.hero-frame-card h2 {
+  font-size: 25px;
+  color: #282850;
+  margin: 0;
+}
+
+.hero-frame-card p {
+  font-size: 17px;
+  color: #63636D;
+}
+
+.langs p {
+  margin: 0;
+  
+  font-size: 17px;
+  color: #63636D;
+}
+
+
+@media (max-width: 975px) {
+  #project-cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 957px) {
+  header nav#nav-computer ul li {
+    display: none;
+  }
+}
+
+@media (max-width: 459px) {
+  #section-nav-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 412px) {
+  header nav#nav-computer button {
+    width: 60px;
+  }
+}
+
+@media (max-width: 347px) {
+  header nav#nav-computer button {
+    display: none;
+  }
+}
+
+@media (max-width: 271px) {
+  section#section-nav-mobile header nav ul li:nth-last-child(2) {
+    display: none;
+  }
+}
