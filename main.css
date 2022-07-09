@@ -84,6 +84,7 @@ header nav#nav-computer p a {
   bottom: 0;
   background-color: #eeeeee;
   display: none;
+  border-top: 1px solid gray;
 }
 
 section#section-nav-mobile header nav {
