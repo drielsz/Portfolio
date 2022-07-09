@@ -7,6 +7,10 @@ html {
   font-family: "Montserrat";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -160,11 +164,16 @@ div.frame-about h2:nth-child(3) {
   text-align: center;
 }
 
+#my-projects div.title-project p a {
+  color: #50f0f0;
+}
+
 #my-projects div.title-project {
   display: flex;
   flex: 1;
   text-align: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #project-cards {
@@ -236,6 +245,15 @@ div.frame-about h2:nth-child(3) {
 @media (max-width: 957px) {
   header nav#nav-computer ul li {
     display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  #my-projects div.title-project p {
+    margin: 0;
+  }
+  #my-projects div.title-project title-project {
+    justify-content: center;
   }
 }
 

@@ -12,20 +12,22 @@
 
 <body>
     <div class="frame">
-        <header>
+        <header class="page-header">
             <nav id="nav-computer">
                 <p>
                     <a href="#">&lt;DZ/&gt;</a>
                 </p>
                 <ul class="flex-end">
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#my-projects">Projetos</a></li>
                     <li><a href="#">Contato</a></li>
                     <!-- <button>
                         <span></span>
                     </button> -->
                 </ul>
-                <button>Portfolio <i class="bi bi-eye-fill"></i></button>
+                <form action="#my-projects">
+                    <button>Portfolio <i class="bi bi-eye-fill"></i></button>
+                </form>
             </nav>
         </header>
 
@@ -42,8 +44,12 @@
 
             <section id="my-projects">
                 <div class="title-project">
-                    <h2>Meus trabalhos</h2>
-                    <p>- Veja todos os meus trabalhos</p>
+                    <h2>Meus Trabalhos</h2>
+                    <p>
+                        <a target="_blank" href="https://github.com/drielsz?tab=repositories">
+                            - Veja todos os meus trabalhos
+                        </a>
+                    </p>
                 </div>
 
             </section>
@@ -52,8 +58,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/NEW-GROUP-CYCLING">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank" href="https://studio.youtube.com/video/hGIcQyvu-YY/edit">
+                                <i class="bi bi-link"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -68,8 +78,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/lidaAgro-Back">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank" href="http://44.202.91.242:5000/">
+                                <i class="bi bi-link"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -84,8 +98,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/FRONT-END-TO-POKEMONS">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank" href="https://drielsz.github.io/FRONT-END-TO-POKEMONS/">
+                                <i class="bi bi-link"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -100,8 +118,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/lovebikestore">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank"  href="https://drielsz.github.io/lovebikestore/">
+                                <i class="bi bi-link"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -117,8 +139,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/facsonteste.github.io">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank"  href="https://drielsz.github.io/facsonteste.github.io/">
+                                <i class="bi bi-link"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -133,8 +159,12 @@
                 <div class="card">
                     <div class="icons">
                         <div>
-                            <i class="bi bi-github"></i>
-                            <i class="bi bi-link"></i>
+                            <a target="_blank" href="https://github.com/drielsz/CASHING-MINERS">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a target="_blank" href="https://github.com/drielsz/back-end-cashingminers">
+                                <i class="bi bi-github"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -159,7 +189,7 @@
         <header>
             <nav id="nav-mobile">
                 <ul>
-                    <li><a href="#"><i class="bi bi-person-workspace"></i> Portfólio</a></li>
+                    <li><a href="#my-projects"><i class="bi bi-person-workspace"></i> Portfólio</a></li>
                     <li><a href="#"><i class="bi bi-menu-up"></i>Skills</a></li>
                     <li><a href="#"><i class="bi bi-telephone"></i> Contrate</a></li>
                 </ul>
@@ -167,6 +197,8 @@
         </header>
     </section>
 
+
+<script src="index.js"></script>
 </body>
 
 </html>
