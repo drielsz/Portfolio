@@ -7,14 +7,24 @@ html {
   font-family: "Montserrat";
 }
 
-/* @keyframes fadeInAnimation {
-  0%{
+body {
+  animation-duration: 1.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
-    opacity:1 
+    transform: translateX(0);
+    opacity: 1;
   }
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -27,23 +37,6 @@ a {
 .frame {
   height: 100%;
   padding: 0 11.75vw 0 11.75vw; /* topo | direita | inferior | esquerda */
-}
-
-body {
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-name: slideInLeft;
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 header nav#nav-computer {
@@ -252,16 +245,38 @@ div.frame-about h2:nth-child(3) {
 
 .hero-frame-card p {
   font-size: 17px;
-  color: #63636D;
+  color: #63636d;
 }
 
 .langs p {
   margin: 0;
-  
+
   font-size: 17px;
-  color: #63636D;
+  color: #63636d;
 }
 
+#about-me h2:first-child {
+  font-weight: 700;
+  font-size: 35px;
+  color: #c8c8c8;
+  margin-bottom: 62px;
+}
+
+#about-me div:first-child {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-about-me {
+  flex: 1;
+  width: 400px;
+  height: 504px;
+  background-color: red;
+  display: flex;
+  justify-self: center;
+}
 
 @media (max-width: 975px) {
   #project-cards {
