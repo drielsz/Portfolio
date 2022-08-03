@@ -6,7 +6,7 @@ html {
   padding: 0;
   font-family: "Montserrat";
 }
-
+/* 
 body {
   animation-duration: 1.8s;
   animation-timing-function: ease-in-out;
@@ -24,7 +24,7 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -72,10 +72,11 @@ header nav#nav-computer button {
   cursor: pointer;
   color: #50f0f0;
   margin-left: 50px;
+  transition: 0.4s;
 }
 
-header nav#nav-computer ul button:hover {
-  background: rgba(80, 240, 240, 0.1);
+header nav#nav-computer button:hover {
+  background: rgba(80, 240, 240, 0.2);
 }
 
 header nav#nav-computer ul li:nth-last-child(1) {
@@ -197,7 +198,8 @@ div.frame-about h2:nth-child(3) {
 }
 
 #project-cards {
-  margin-block: 62px;
+  margin-top: 62px;
+  margin-bottom: 6.75em;
   flex: 1;
   height: auto;
   display: flex;
@@ -208,7 +210,7 @@ div.frame-about h2:nth-child(3) {
 
 .card {
   width: 282px;
-  height: 302px;
+  height: auto;
   background-color: #f0f0f0;
   padding: 30px;
 }
@@ -255,6 +257,8 @@ div.frame-about h2:nth-child(3) {
   color: #63636d;
 }
 
+/*  */
+
 #about-me h2:first-child {
   font-weight: 700;
   font-size: 35px;
@@ -263,10 +267,10 @@ div.frame-about h2:nth-child(3) {
 }
 
 #about-me div:first-child {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-about-me {
@@ -278,6 +282,127 @@ div.frame-about h2:nth-child(3) {
   justify-self: center;
 }
 
+#section-about-details {
+  flex: 1;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-about-details {
+  width: 400px;
+  padding: 30px;
+  height: auto;
+  background-color: #f0f0f0;
+  padding-bottom: 5px;
+}
+
+.hero-about-details img {
+  width: 125px;
+  height: 124px;
+  border-radius: 62px;
+  margin: auto;
+  display: block;
+  margin-bottom: 45px;
+  overflow: hidden;
+  outline: 62px solid rgba(40, 40, 80, 0.4) !important;
+  outline-offset: -100px;
+  transition: 0.4s;
+}
+
+.hero-about-details img:hover {
+  outline: 0px solid transparent !important;
+  outline-offset: -100px;
+}
+
+.hero-about-details h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  color: #282850;
+}
+
+.hero-about-details h3 {
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #1c1c1c;
+}
+
+.hero-about-details p {
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #63636d;
+}
+
+.hero-about-details p > b, a {
+  color: #282850;
+}
+
+.icons-about-details {
+  width: 43%;
+  height: 40px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 45px;
+}
+
+.icons-about-details i {
+  background: rgba(110, 110, 129, 0.1);
+  text-align: center;
+  color: #6e6e81;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.icons-about-details i:hover {
+  background: rgba(110, 110, 129, 0.3);
+}
+
+#section-about-details > div > button {
+  width: 100%;
+  height: 40px;
+  border: 0px transparent;
+  background: #282850;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+#section-about-details > div > button > p {
+  font-size: 16px;
+  /* identical to box height */
+  color: #eeeeee;
+}
+#tilte-about-details,
+.tilte-about-details {
+  font-size: 35px;
+  color: #c8c8c8;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin-bottom: 62px;
+
+}
 @media (max-width: 975px) {
   #project-cards {
     justify-content: center;
@@ -291,10 +416,19 @@ div.frame-about h2:nth-child(3) {
 }
 
 @media (max-width: 750px) {
-  #my-projects div.title-project p {
+    div.title-project p {
     margin: 0;
   }
   #my-projects div.title-project title-project {
+    justify-content: center;
+  }
+  #tilte-about-details {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 692px) {
+  #my-projects div.title-project {
     justify-content: center;
   }
 }
