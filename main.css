@@ -342,7 +342,8 @@ div.frame-about h2:nth-child(3) {
   color: #63636d;
 }
 
-.hero-about-details p > b, a {
+.hero-about-details p > b,
+a {
   color: #282850;
 }
 
@@ -375,7 +376,7 @@ div.frame-about h2:nth-child(3) {
   background: rgba(110, 110, 129, 0.3);
 }
 
-#section-about-details > div > form >button {
+#section-about-details > div > form > button {
   width: 100%;
   height: 40px;
   border: 0px transparent;
@@ -401,7 +402,6 @@ div.frame-about h2:nth-child(3) {
   flex: 1;
   justify-content: flex-start;
   margin-bottom: 62px;
-
 }
 @media (max-width: 975px) {
   #project-cards {
@@ -416,7 +416,7 @@ div.frame-about h2:nth-child(3) {
 }
 
 @media (max-width: 750px) {
-    div.title-project p {
+  div.title-project p {
     margin: 0;
   }
   #my-projects > div > p {
