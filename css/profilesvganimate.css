@@ -1,0 +1,111 @@
+#coffe {
+    animation: coffeAnimate 2s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes coffeAnimate {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#head {
+    transform-origin: center; /* Define o ponto de origem da transformação no centro do elemento */
+    animation: headAnimate 5s ease-in-out infinite alternate; /* Define a animação */
+}
+
+@keyframes headAnimate {
+    0% {
+        transform: rotateZ(0deg); /* Cabeça reta */
+    }
+    25% {
+        transform: rotateZ(15deg); /* Inclinação para a direita */
+    }
+    75% {
+        transform: rotateZ(-15deg); /* Inclinação para a esquerda */
+    }
+    100% {
+        transform: rotateZ(0deg); /* Volta à posição inicial */
+}}
+
+
+#hand {
+    transform-origin: center; /* Define o ponto de origem da transformação no centro do elemento */
+    animation: handAnimate 3s ease-in-out infinite alternate; /* Define a animação */
+}
+
+@keyframes handAnimate {
+    0% {
+        transform: translateY(0); /* Mão na posição inicial */
+    }
+    50% {
+        transform: translateY(10px); /* Mão balançando para frente */
+    }
+    100% {
+        transform: translateY(0); /* Mão na posição inicial */
+    }
+}
+
+#ball {
+    transform-origin: center; /* Define o ponto de origem da transformação no centro da lua */
+    animation: moonAnimate 10s linear infinite; /* Define a animação */
+}
+
+@keyframes moonAnimate {
+    0% {
+        transform: scale(1) rotate(0deg); /* Lua na posição inicial */
+    }
+    50% {
+        transform: scale(1.1) rotate(180deg); /* Lua aumenta de tamanho e gira 180 graus */
+    }
+    100% {
+        transform: scale(1) rotate(360deg); /* Lua retorna ao tamanho original e completa uma rotação completa */
+    }
+}
+
+#body {
+    animation: bodyAnimate 4s ease-in-out infinite alternate; /* Redefine a animação para o corpo */
+}
+
+#balls {
+    animation: ballsOpacity 4s infinite; /* Define a animação para as bolinhas */
+}
+
+#adrielname {
+    stroke-dasharray: 1000; /* Define o tamanho da linha tracejada para o comprimento total do texto */
+    stroke-dashoffset: 1000; /* Começa com o texto invisível */
+    animation: drawName 8s linear infinite; /* Define uma animação mais demorada e infinita para desenhar o nome */
+}
+@keyframes bodyAnimate {
+    0% {
+        transform: translateY(0); /* Corpo na posição inicial */
+    }
+    50% {
+        transform: translateY(3px); /* Movimento para cima */
+    }
+    100% {
+        transform: translateY(0); /* Corpo na posição inicial */
+    }
+}
+
+@keyframes ballsOpacity {
+    0%, 25%, 75%, 100% {
+        opacity: 1; /* Opacidade total */
+    }
+    50% {
+        opacity: 0.5; /* Opacidade reduzida */
+    }
+}
+
+@keyframes drawName {
+    to {
+        stroke-dashoffset: 0; /* Completa o desenho do texto */
+    }
+}

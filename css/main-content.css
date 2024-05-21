@@ -1,0 +1,182 @@
+:root {
+    --primary-padding: clamp(1.5em, 4vw, 2.5em);
+    --animation-primary: all .5s cubic-bezier(.7, 0, .3, 1);
+}
+
+.main-text h1, .contentspan{
+    color: white;
+    font-size: 32px;
+}
+
+.wrapper-text {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-text h1 {
+    margin-right: 10px;
+}
+
+.code {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.main-text p {
+    font-size: 18px;
+}
+
+.main-text p,
+h1 {
+    margin: 0;
+    padding: 0;
+    line-height: calc(var(--primary-padding)/1.5);
+}
+
+.main-content {
+    height: 100vh;
+}
+
+.principal-information{
+    padding-top: calc(var(--primary-padding)*4.5);
+    height: 100%;
+    width: 100%;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-content .row {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main-content .row button {
+    display: flex;
+    width: 210px;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-family: 'Nexa', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: calc(var(--primary-padding)/2.3);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.main-content button:first-child p {
+    color: white;
+    z-index: 2;
+}
+
+.main-content button:first-child svg {
+    z-index: 2;
+    padding-left: 10px;
+    text-align: center;
+    fill: red;
+}
+
+.main-content button:first-child {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.main-content button:first-child:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.main-content button:first-child:hover p {
+    color: white;
+}
+
+.main-content button:first-child:hover {
+    border: 0.5px solid var(--border-color);
+}
+
+.main-content button:first-child .arrow-right {
+    fill: var(--primary-background-color);
+    z-index: 2;
+}
+
+.main-content button:first-child .arrow-right {
+    fill: white;
+    z-index: 2;
+}
+
+.main-content button:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    transition: transform 0.5s ease;
+}
+
+.main-content button:nth-child(2):hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.main-content button:nth-child(2):hover {
+    border: none;
+    transition: border 2s ease;
+}
+
+.main-content button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: white;
+    transition: all 0.5s ease;
+    /* Adiciona transição para sombra e cor */
+}
+
+.arrow-down path {
+    fill: white;
+}
+
+.main-content button:nth-child(2):hover::before {
+    top: 0%;
+    /* Movimento para baixo quando passa o mouse */
+}
+
+.main-content .row img,
+.arrow-down svg {
+    padding-left: 10px;
+    text-align: center;
+}
+
+.read {
+    font-weight: 800;
+}
+
+.clickhere {
+    cursor: pointer;
+    color: var(--call-att-green);
+    font-size: 18px;
+}

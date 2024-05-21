@@ -1,0 +1,236 @@
+@media screen and (max-width: 1117px) {
+    .skills .row .flex-col {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .works .box .title-box h1 {
+        font-size: 31.5px;
+    }
+
+    .works .box p.participate {
+        position: relative;
+    }
+
+    .works .flex-col {
+        width: 50%;
+    }
+
+    .works .box img {
+        display: block;
+        width: 100%;
+        height: 80%;
+        position: relative;
+    }
+
+    .works .box {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        text-align: start !important;
+        align-items: flex-start !important;
+    }
+}
+    /* Para telas com largura máxima de 990px */
+    @media screen and (max-width: 990px) {
+        .profile {
+            margin-top: calc(var(--primary-padding)* 1.2);
+        }
+
+        section {
+            margin-bottom: 7vh;
+        }
+
+        .profile .flex-col {
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile .flex-col:nth-child(2) {
+            margin-bottom: 40px;
+        }
+
+        .profile .flex-col:nth-child(1) {
+            margin-bottom: 40px;
+        }
+
+        .skills .flex-col {
+            justify-content: stretch;
+        }
+
+        .main-content {
+            padding-top: 0;
+        }
+
+        .arraste {
+            display: block;
+        }
+
+        .fixed-nav {
+            display: none;
+        }
+
+        .main-content {
+            height: 35vh;
+        }
+
+        .profile {
+            height: auto;
+        }
+
+        .subtitle {
+            margin-bottom: 1.5em;
+        }
+
+        .undertakings .flex-col {
+            width: 100%;
+        }
+
+        .undertakings .box-undertakings {
+            width: 100%;
+            background-color: #424242;
+        }
+
+        .undertakings .description {
+            margin: 2em 0px 3em 0px;
+            text-align: start;
+            margin-right: 0
+        }
+
+    }
+
+    /* Para telas com largura máxima de 975px */
+    @media screen and (max-width: 975px) {
+        .menu {
+            display: block;
+        }
+
+        header nav .flex-col {
+            width: 30%;
+        }
+
+        .flex-col:nth-child(3) .button {
+            display: none;
+        }
+
+        header .row {
+            border: 1px solid var(--border-color);
+            padding: 5px;
+            border-radius: 10px;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .skills .flex-col .box-language {
+            position: relative;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 808px) {
+        .skills .row .flex-col {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 622px) {
+        .works .flex-col {
+            width: 100%;
+        }
+    }
+
+    /* Para telas com largura máxima de 592px */
+    @media screen and (max-width:592px) {
+        header nav .flex-col {
+            width: 28%;
+        }
+
+        html {
+            padding: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        .main-content .row button {
+            width: 100%;
+        }
+
+        .main-content .row {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .main-content {
+            height: 43vh;
+        }
+
+        .main-content {
+            margin: 0;
+        }
+
+        .main-content .main-text h1,
+        span.contentspan {
+            font-size: 30px !important;
+        }
+
+        .profile .row .flex-col p,
+        span.profile {
+            font-size: 16px !important;
+        }
+
+        .wrapper-second-text .second-text {
+            font-size: 16px !important;
+            font-family: 'Nexa', sans-serif;
+            line-height: 20px;
+        }
+
+        p.read {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Para telas com largura máxima de 450px */
+    @media screen and (max-width:450px) {
+        header nav .flex-col {
+            width: 25%;
+        }
+
+    }
+
+    /* Para telas com largura máxima de 296px */
+    @media screen and (max-width: 296px) {
+        html {
+            padding: 5px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .full-name {
+            display: none;
+        }
+
+        .first-name {
+            display: block;
+        }
+    }
+
+    /* Para telas com largura máxima de 765px */
+    @media screen and (max-width: 765px) {
+        html {
+            padding: 40px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    /* Para telas com largura máxima de 550px */
+    @media screen and (max-width: 550px) {
+        .profile svg {
+            width: 90%;
+        }
+    }

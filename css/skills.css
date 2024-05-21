@@ -1,0 +1,52 @@
+.skills {
+    color: white;
+}
+
+.skills .row {
+    justify-content: center;
+}
+
+.skills .flex-col {
+    width: 33.33%;
+}
+
+
+.skills .flex-col .box-language {
+    width: auto;
+    height: 120px;
+    background-color: rgba(66, 66, 66, 0.2);
+    /* Adiciona transparência usando rgba() */
+    padding: 16px;
+    /* Combina todas as propriedades de preenchimento em uma linha */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    mix-blend-mode: luminosity;
+}
+
+.skills .flex-col .box-language:hover {
+    mix-blend-mode: normal;
+}
+
+.skills .flex-col .box-language:hover {
+    transform: translateY(-10px);
+}
+
+.skills .flex-col .box-language img {
+    width: 75%;
+    height: 75%;
+}
+
+.skills .flex-col .box-language .box-img {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px !important;
+    min-width: 70px;
+    margin-right: 1em;
+    opacity: 90%;
+}

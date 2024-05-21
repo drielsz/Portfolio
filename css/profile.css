@@ -1,0 +1,33 @@
+.profile .flex-col {
+    width: 50%;
+    text-align: center;
+}
+
+.profile .flex-col:nth-child(1) {
+    align-self: center;
+}
+
+.profile .flex-col:nth-child(1) h1 {
+    font-weight: 900;
+    color: white;
+    text-transform: capitalize;
+}
+.profile .flex-col:nth-child(1) p {
+    margin-bottom: calc(var(--primary-padding)*0.5);
+}
+
+.profile .flex-col p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.profile .flex-col svg {
+    height: auto;
+}
+
+.profile-text {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}

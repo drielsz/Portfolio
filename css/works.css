@@ -1,0 +1,97 @@
+.works .box {
+    width: auto;
+    height: 8vw;
+    min-height: 8vw;
+    border: 1px solid #c1c1c1;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.works .flex-col:nth-child(1) .box {
+    border-bottom: 0;
+}
+
+.works .flex-col:nth-child(2) .box {
+    border-bottom: 0;
+}
+
+.works .flex-col:nth-child(3) .box {
+    border-bottom: 0;
+}
+
+.works .box .title-box {
+    text-transform: capitalize;
+    color: white;
+    position: relative;
+}
+
+.works .box img {
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.hover-reveal {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .3s ease-out;
+    z-index: 20;
+}
+
+.hover-reveal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: text-transform .5s ease-out;
+}
+
+.works .box .title-box p {
+    color: #c8c8c8;
+    text-transform: capitalize;
+}
+
+.works .box p.participate {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    display: none !important;
+}
+
+.works .box .title-box h1 {
+    font-size: 40px;
+}
+
+.box-image {
+    width: auto;
+    height: 220px;
+    background-color: #3E6715;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    display: none !important;
+}
+
+.follow-mouse {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute; /* Alterado de "absolute" para "fixed" */
+
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+}

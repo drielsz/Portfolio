@@ -1,0 +1,91 @@
+header nav {
+    width: 100%;
+    height: auto;
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+header nav .flex-col {
+    width: 33.33%;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+header li a:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+header .flex-col:nth-child(2) {
+    text-align: center;
+}
+
+header .flex-col:nth-child(3) {
+    text-align: end;
+}
+
+header .flex-col:nth-child(1) .brand-image {
+    display: flex;
+    align-items: center;
+}
+
+header .flex-col:nth-child(1) .brand-image img {
+    margin-right: 1rem;
+}
+
+header .flex-col:nth-child(2) {
+    align-self: center;
+}
+
+header .flex-col:nth-child(2) .fixed-nav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+}
+
+header .flex-col:nth-child(2) .fixed-nav a {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .flex-col:nth-child(2) .fixed-nav a:first-child {
+    margin: 0;
+}
+
+header .flex-col:nth-child(3) {
+    align-self: center;
+}
+
+header .flex-col:nth-child(3) .button {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header .flex-col:nth-child(4) {
+    text-align: end;
+    height: 100%;
+    position: relative;
+    width: fit-content;
+}
+
+header .first-name, header .menu {
+    display: none;
+}
