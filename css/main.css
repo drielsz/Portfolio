@@ -26,6 +26,7 @@ html {
     padding-bottom: 0;
     padding-top: 0;
     line-height: 1.6 !important;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -141,12 +142,13 @@ i {
 }
 
 .main-wrapper {
+    height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
-    scroll-behavior: smooth;
-    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
-    -ms-overflow-style: none; /* Oculta a barra de rolagem no Internet Explorer/Edge */
+    scrollbar-width: none;
+    /* Oculta a barra de rolagem no Firefox */
+    -ms-overflow-style: none;
+    /* Oculta a barra de rolagem no Internet Explorer/Edge */
 }
 
 section {
